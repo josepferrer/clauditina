@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Alert from 'react-bootstrap/Alert';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 import './App.css';
 
@@ -56,8 +57,10 @@ const App = () => (
         Submit
       </Button>
     </Form>
+    <AmplifySignOut />
      </Jumbotron>
   </Container>
 );
 
-export default App;
+//export default App;
+export default withAuthenticator(App);
