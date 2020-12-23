@@ -1,7 +1,4 @@
 {
   "features": {
-    "auth": {
-      "enablecaseinsensitivity": true
-    }
   }
 }
